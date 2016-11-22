@@ -1,0 +1,30 @@
+---
+html_id: home
+class: special
+title: Tough Space 
+image: /images/home.jpg
+position: center center
+---
+
+<header>
+	<h1>{{ site.title }}</h1>
+	<p style="text-align: left;">Hi, I'm Jason with Tough Space Consulting. I'm currently traveling overseas with my beautiful wife, <a href="http://funktravels.com" target="_blank">documenting our travels</a>, and learning a foreign language.</p>
+	<p style="text-align: left; margin-top: 1em;">I'm currently too busy to take on new clients. However, I'd still love to hear from you via <a href="mailto:contact@tough.space">email</a> or <a target="_blank" href="http://twitter.com/jasonlfunk">twitter</a>.</p>
+</header>
+<nav id="nav">
+	<ul class="actions vertical special spinY">
+		{% for panel in site.panels %}
+			{% unless panel.class == "special" %}
+				<li><a href="#{{ panel.html_id }}" class="button">{{ panel.title }}</a></li>
+			{% endunless %}
+		{% endfor %}
+		<li><a target='_blank' href="http://wpexperiments.com" class="button">WP Experiments</a></li>
+		<li><a target='_blank' href="http://icaltogcal.com" class="button">icaltogcal</a></li>
+	</ul>
+</nav>
+<ul class="icons">
+	<li><a target="_blank" href="http://twitter.com/jasonlfunk" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+	<li><a target="_blank" href="http://github.com/jasonlfunk" class="icon fa-github"><span class="label">GitHub</span></a></li>
+	<li><a target="_blank" href="http://stackoverflow.com/users/1128407/jasonlfunk" class="icon fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
+	<li><a href="mailto:contact@tough.space" class="icon fa-envelope"><span class="label">Email</span></a></li>
+</ul>
