@@ -224,3 +224,11 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 980px) {
+		#about {
+			div.image {
+				background-position: top center !important;
+			}
+		}
+	}
